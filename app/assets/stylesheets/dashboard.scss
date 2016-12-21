@@ -1,3 +1,5 @@
+$dull-lavender: rgb(154, 138, 245);
+
 img.db-img {
   /* Set rules to fill background */
   min-height: 100%;
@@ -11,4 +13,30 @@ img.db-img {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+.upload {
+  background-color: transparent;
+  border-radius: 4px;
+  font-size: 16.5px;
+
+  a {
+    color: white;
+    border: 1px solid white;
+    //TODO need a cooler font!
+  }
+
+  a:hover {
+    background: $dull-lavender;
+    border: 1px solid $dull-lavender;
+    //TODO style hover color
+  }
+}
+
+.user {
+  font-size: 16.5px;
+
+  span {
+    color: #FFF;
+  }
 }
