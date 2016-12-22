@@ -1,8 +1,10 @@
-$dull-lavender: rgb(154, 138, 245);
-
 .nav > li > a:hover {
   background: transparent;
 } // disable bootstrap hover
+
+.dashboard {
+  color: $dull-lavender;
+}
 
 img.db-img {
   /* Set rules to fill background */
@@ -21,18 +23,20 @@ img.db-img {
 
 .pill {
   font-size: 16.5px;
+  font-family: 'Oswald', sans-serif;
+//  letter-spacing: 1.5px;
 
   a {
-    color: white;
+    color: $white;
   }
 
   &:hover {
-    background-color: white;
-    color: pink;
+    background-color: $white;
+    color: $pink;
 
     a {
-      color: pink;
-      border: 1px solid pink;
+      color: $pink;
+      border: 1px solid $pink;
     }
   }
 }
@@ -41,8 +45,30 @@ img.db-img {
   background-color: transparent;
   border-radius: 4px;
 
+  &:hover {
+    background-color: transparent;
+  }
+
   a {
-    border: 1px solid white;
+    border: 1px solid $white;
     //TODO need a cooler font!
   }
+}
+
+.title {
+  font-family: 'Merienda One', cursive;
+  text-align: center;
+  font-size: 75px;
+  padding: 0;
+  text-shadow: 4px 4px $black;
+  color: $white;
+}
+
+.title:first-child {
+  margin-top: 60px;
+  margin-bottom: -10px;
+}
+
+.title:last-child {
+  margin-top: 0;
 }
