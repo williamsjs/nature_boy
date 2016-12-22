@@ -55,7 +55,7 @@ img.db-img {
   }
 }
 
-.title {
+.title h1 {
   font-family: 'Merienda One', cursive;
   text-align: center;
   font-size: 75px;
@@ -64,11 +64,20 @@ img.db-img {
   color: $white;
 }
 
-.title:first-child {
+.title h1:first-child {
   margin-top: 60px;
   margin-bottom: -10px;
 }
 
-.title:last-child {
+.title h1:nth-child(2) {
   margin-top: 0;
+}
+
+category .row {
+  margin-top: 150px;
+}
+
+category .col-md-4 {
+  background: white;
+  text-align: center;
 }
