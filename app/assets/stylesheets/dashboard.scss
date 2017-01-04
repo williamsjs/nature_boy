@@ -84,11 +84,3 @@ category .cat-column {
   height: 150px;
   border-radius: 3px;
 }
-
-@media (max-width: 992px) {
-  category .cat-column:first-child { // TODO add custom styling to get categories to cooperate on tablet screens
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 40%;
-  }
-}
