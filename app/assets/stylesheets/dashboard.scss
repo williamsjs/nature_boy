@@ -83,9 +83,12 @@ category .cat-column {
   margin-bottom: 20px;
   height: 150px;
   border-radius: 3px;
+  padding: auto 0; // Override Bootstrap!
 }
 
 .lion {
-  background: asset-data-url("lion.jpg") no-repeat fixed center;
-  background-size: 100%;
+  background: asset-data-url("lion.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 500px;
 }
