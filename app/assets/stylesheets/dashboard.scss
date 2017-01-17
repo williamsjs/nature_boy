@@ -84,3 +84,8 @@ category .cat-column {
   height: 150px;
   border-radius: 3px;
 }
+
+.lion {
+  background: asset-data-url("lion.jpg") no-repeat fixed center;
+  background-size: 100%;
+}
