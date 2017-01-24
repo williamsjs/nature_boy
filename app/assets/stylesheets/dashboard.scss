@@ -2,23 +2,11 @@
   background: transparent;
 } // disable bootstrap hover
 
+.container-fluid {
+  background: asset-data-url("fox.jpg") no-repeat fixed;
+}
 .dashboard {
   color: $dull-lavender;
-}
-
-img.db-img {
-  /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 1024px;
-
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-
-  /* Set up positioning */
-  position: fixed;
-  top: 0;
-  left: 0;
 }
 
 .pill {
@@ -51,7 +39,6 @@ img.db-img {
 
   a {
     border: 1px solid $white;
-    //TODO need a cooler font!
   }
 }
 
@@ -73,22 +60,30 @@ img.db-img {
   margin-top: 0;
 }
 
-category .row {
-  margin-top: 85px;
-}
-
-category .cat-column {
+// category .row {
+//   margin-top: 85px;
+// }
+//
+.cat-column {
   background: white;
   text-align: center;
   margin-bottom: 20px;
   height: 150px;
   border-radius: 3px;
-  padding: auto 0; // Override Bootstrap!
+  display: inline-block;
+  width: 500px;
+  margin: 20px;
 }
 
 .lion {
   background: asset-data-url("lion.jpg");
   background-size: cover;
-  height: 100%;
-  width: 500px;
+  // height: 100%;
+  // width: 500px;
+}
+
+.categories {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
