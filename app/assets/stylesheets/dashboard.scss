@@ -12,19 +12,23 @@
 .pill {
   font-size: 16.5px;
   font-family: 'Oswald', sans-serif;
-//  letter-spacing: 1.5px;
+  color: $pink;
 
   a {
     color: $white;
   }
 
-  &:hover {
-    background-color: $white;
-    color: $pink;
+  .sign-up {
+    color: blue;
+    border: none;
+  }
 
-    a {
+  &:hover {
+
+    a:not(.sign-up) {
       color: $pink;
       border: 1px solid $pink;
+      background-color: $white;
     }
   }
 }
@@ -86,4 +90,8 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+}
+
+.dropdown-menu .form-group {
+  text-align: center;
 }
