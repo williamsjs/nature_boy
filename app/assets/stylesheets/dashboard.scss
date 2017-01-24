@@ -71,18 +71,18 @@
   height: 150px;
   border-radius: 3px;
   display: inline-block;
-  width: 500px;
+  width: 300px;
   margin: 20px;
 }
 
 .lion {
   background: asset-data-url("lion.jpg");
   background-size: cover;
-  // height: 100%;
-  // width: 500px;
 }
 
 .categories {
+  float: right;
+  width: 50%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
