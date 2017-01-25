@@ -1,26 +1,61 @@
-<h2>Log in</h2>
-
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
-
-  <% if devise_mapping.rememberable? -%>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+<%= image_tag "fox.jpg", class: "fox" %>
+<div class="container-fluid">
+  <div class="dashboard">
+    <ul class="nav nav-pills">
+      <li role="presentation" class="pill user">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+            <div class="form-group">
+              <%= f.label :email %><br />
+              <%= f.email_field :email, autofocus: true, class: "form-control" %>
+            </div>
+            <div class="form-group">
+              <%= f.label :password %><br />
+              <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+          <% end %>
+          <%= render "users/shared/links" %>
+          <a href="#" class="sign-up">Sign Up</a>
+        </ul>
+      </li>
+      <li role="presentation" class="pill upload">
+        <a href="#"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> <strong>Upload</strong></a>
+      </li>
+    </ul>
+    <div>
+      <div class="title">
+        <div class="row">
+          <div class="col-md-9">
+            <h1 class="main-title">Nature Boy</h1>
+            <div class="pictures">
+              <h1>title</h1>
+              <p>alksdfj</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="categories">
+              <div class="cat-column lion">
+                <p>Critters</p>
+              </div>
+              <div class="cat-column">
+                <p>Out Of This World</p>
+              </div>
+              <div class="cat-column">
+                <p>Fauna</p>
+              </div>
+              <div class="cat-column">
+                <p>Beasts</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  <% end -%>
-
-  <div class="actions">
-    <%= f.submit "Log in" %>
   </div>
-<% end %>
-
-<%= render "users/shared/links" %>
+</div>
