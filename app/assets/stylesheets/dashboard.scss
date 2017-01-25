@@ -2,9 +2,16 @@
   background: transparent;
 } // disable bootstrap hover
 
-.container-fluid {
-  background: asset-data-url("fox.jpg") no-repeat fixed;
+.fox {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
 }
+
 .dashboard {
   color: $dull-lavender;
 }
@@ -45,29 +52,24 @@
   }
 }
 
-.title h1 {
+.title .main-title {
   font-family: 'Merienda One', cursive;
   text-align: center;
+  padding-left: 10%;
   font-size: 75px;
   padding: 0;
   text-shadow: 4px 4px $black;
   color: $white;
-}
-
-.title h1:first-child {
-  margin-top: 60px;
   margin-bottom: -10px;
 }
 
-.title h1:nth-child(2) {
-  margin-top: 0;
-}
-
 .cat-column {
+  border: 1px solid #000;
+  border-top: 4.5px solid $dull-lavender;
   background: white;
   text-align: center;
   margin-bottom: 20px;
-  height: 150px;
+  height: 125px;
   border-radius: 3px;
   display: inline-block;
   width: 300px;
@@ -80,8 +82,6 @@
 }
 
 .categories {
-  float: right;
-  width: 50%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
