@@ -79,14 +79,22 @@
   font-family: 'Merienda One', cursive;
 }
 
-.lion {
-  background: asset-data-url("lion.jpg");
+.bear {
+  background: asset-data-url("bear.jpg");
   background-size: cover;
 }
 
 .fox {
   background: asset-data-url("fox.jpg");
   background-size: cover;
+}
+
+.night-sky {
+  background: asset-data-url("night-sky.jpg");
+}
+
+.daisies {
+  background: asset-data-url("daisies.jpg");
 }
 
 .categories {
