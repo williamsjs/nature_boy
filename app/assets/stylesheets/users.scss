@@ -25,13 +25,13 @@
     color: $white;
   }
 
-  .sign-up {
+  .user-options {
     color: blue;
     border: none;
   }
 
   &:hover {
-    a:not(.sign-up) {
+    a:not(.user-options) {
       color: $pink;
       border: 1px solid $pink;
       background-color: $white;
@@ -74,7 +74,6 @@
   margin: 20px;
   color: white;
   text-shadow: 1px 1px black;
-  box-shadow: 1px 1px 1px $dull-lavender;
   font-size: 16.5px;
   font-family: 'Merienda One', cursive;
 }
