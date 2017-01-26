@@ -2,7 +2,7 @@
   background: transparent;
 } // disable bootstrap hover
 
-.fox {
+.sunset {
   position: fixed;
   top: 0;
   left: 0;
@@ -64,9 +64,7 @@
 }
 
 .cat-column {
-  border: 1px solid #000;
-  border-top: 4.5px solid $dull-lavender;
-  background: white;
+  border: .5px solid #000;
   text-align: center;
   margin-bottom: 20px;
   height: 125px;
@@ -74,10 +72,20 @@
   display: inline-block;
   width: 300px;
   margin: 20px;
+  color: white;
+  text-shadow: 1px 1px black;
+  box-shadow: 1px 1px 1px $dull-lavender;
+  font-size: 16.5px;
+  font-family: 'Merienda One', cursive;
 }
 
 .lion {
   background: asset-data-url("lion.jpg");
+  background-size: cover;
+}
+
+.fox {
+  background: asset-data-url("fox.jpg");
   background-size: cover;
 }
 
