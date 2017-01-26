@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  devise_for :users, controllers: { sessions: 'users/sessions' }
+  devise_scope :user do
+    get '/user/sessions' => 'some_devise_controller'
+  end
+
+  devise_for :users, controllers: { sessions: 'users/sessions' }, path_names: { sign_in: 'login' }
 
   root to: 'dashboard#index'
 
