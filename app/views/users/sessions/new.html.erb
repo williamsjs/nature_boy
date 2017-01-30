@@ -35,18 +35,11 @@
           </div>
           <div class="col-md-3">
             <div class="categories">
-              <div class="cat-column fox">
-                <p>Critters</p>
-              </div>
-              <div class="cat-column night-sky">
-                <p>Out Of This World</p>
-              </div>
-              <div class="cat-column daisies">
-                <p>Fauna</p>
-              </div>
-              <div class="cat-column bear">
-                <p>Beasts</p>
-              </div>
+              <% @categories.each do |c| %>
+                <div class="cat-column <%= c.name.downcase %>">
+                  <p><%= c.name %></p>
+                </div>
+              <% end %>
             </div>
           </div>
         </div>
