@@ -36,7 +36,7 @@
           <div class="col-md-3">
             <div class="categories">
               <% @categories.each do |c| %>
-                <div class="cat-column <%= c.name.downcase %>">
+                <div class="cat-column <%= format_class_name(c.name) %>">
                   <p><%= c.name %></p>
                 </div>
               <% end %>
