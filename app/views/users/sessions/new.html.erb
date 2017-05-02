@@ -36,9 +36,9 @@
           <div class="col-md-3">
             <div class="categories">
               <% @categories.each do |c| %>
-                <div class="cat-column <%= format_class_name(c.name) %>">
-                  <p><%= c.name %></p>
-                </div>
+                <button class="cat-column <%= format_class_name(c.name) %>">
+                    <p><%= c.name %></p>
+                </button>
               <% end %>
             </div>
           </div>
