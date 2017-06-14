@@ -1,0 +1,105 @@
+.nav > li > a:hover {
+  background: transparent;
+} // disable bootstrap hover
+
+.sunset {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* Preserve aspect ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.dashboard {
+  color: $dull-lavender;
+}
+
+.pill {
+  font-size: 16.5px;
+  font-family: 'Oswald', sans-serif;
+  color: $pink;
+
+  a {
+    color: $white;
+  }
+
+  .user-options {
+    color: blue;
+    border: none;
+  }
+
+  &:hover {
+    a:not(.user-options) {
+      color: $pink;
+      border: 1px solid $pink;
+      background-color: $white;
+    }
+  }
+}
+
+.upload {
+  background-color: transparent;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: transparent;
+  }
+
+  a {
+    border: 1px solid $white;
+  }
+}
+
+.title .main-title {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding-left: 10%;
+  font-size: 75px;
+  padding: 0;
+  text-shadow: 4px 4px $black;
+  color: $white;
+  margin-bottom: 40px;
+}
+
+.cat-column {
+  border: .5px solid #000;
+  text-align: center;
+  margin-bottom: 20px;
+  height: 125px;
+  border-radius: 3px;
+  display: inline-block;
+  width: 300px;
+  margin: 20px;
+  color: white;
+  text-shadow: 1px 1px black;
+  font-size: 16.5px;
+  font-family: 'Merienda One', cursive;
+
+  .cat-header {
+    margin-bottom: 5em;
+  }
+}
+
+.beasts {
+  background: asset-data-url("bear.jpg");
+  background-size: cover;
+}
+
+.critters {
+  background: asset-data-url("fox.jpg");
+  background-size: cover;
+}
+
+.out-of-this-world {
+  background: asset-data-url("night-sky.jpg");
+}
+
+.flora {
+  background: asset-data-url("daisies.jpg");
+}
+
+.dropdown-menu .form-group {
+  text-align: center;
+}

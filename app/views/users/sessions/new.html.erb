@@ -34,10 +34,10 @@
             <h1 class="main-title">Nature Boy</h1>
           </div>
           <div class="col-md-3">
-            <div class="categories">
+            <div class="row categories">
               <% @categories.each do |c| %>
-                <button class="cat-column <%= format_class_name(c.name) %>">
-                    <p><%= c.name %></p>
+                <button class="col-xs-12 cat-column <%= format_class_name(c.name) %>">
+                    <p class="cat-header"><%= c.name %></p>
                 </button>
               <% end %>
             </div>
